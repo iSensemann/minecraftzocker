@@ -1,0 +1,9 @@
+Error #1 => Onlineplayers -> Kein Datenbank ergebnis.
+
+Error #2 =>
+
+Error #3 =>
+
+Error #4 =>
+
+Error #5 =>
