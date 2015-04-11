@@ -58,18 +58,40 @@
 									<label class="label bg-primary group-admin">Admin</label> 
 									<span class="text-muted m-l-small pull-right">
 									<i class="fa fa-clock-o"></i>
-									<?php $curenttime="2015-03-31 00:20:00";$time_ago =strtotime($curenttime);echo timeAgo($time_ago);?>
+									<?php $curenttime="2015-04-07 22:09:00";$time_ago =strtotime($curenttime);echo timeAgo($time_ago);?>
+									</span> 
+									</header> 
+									<div class="panel-body">
+									<p class="articletitle"><h1>Backupsystem</h1></p>
+									<blockquote> <p>We are currently working on our Backupsystem.</p> 
+									</blockquote>
+									</div>
+								</section> 
+							</article>
+							<br>		
+							
+							<article id="comment-id-2" class=""> 
+								<a class="pull-left">
+								<img class="circular" src="http://minecraft-skin-viewer.com/face.php?u=_Sensemann_&s=64">
+								</a>
+								<section class="media-body panel">
+									<header class="panel-heading clearfix"> <a class="linkred" href="p/profile/?user=_Sensemann_">_Sensemann_&nbsp;</a> 
+									<label class="label bg-primary group-admin">Admin</label> 
+									<span class="text-muted m-l-small pull-right">
+									<i class="fa fa-clock-o"></i>
+									<?php $curenttime="2015-04-07 22:09:00";$time_ago =strtotime($curenttime);echo timeAgo($time_ago);?>
 									</span> 
 									</header> 
 									<div class="panel-body">
 									<blockquote> 
-									<p>Last Homepage update 31th March 2015, 12:20am ALPHA 1.1.10
+									<p>Last Homepage update 7th April 2015, 10:09am ALPHA 1.1.11
 									</p> 
 									</blockquote>
 									</div>
 								</section> 
 							</article>
 							<br>
+							
 							<article id="comment-id-1" class=""> 
 								<a class="pull-left">
 								<img class="circular" src="http://minecraft-skin-viewer.com/face.php?u=_Sensemann_&s=64">
@@ -96,6 +118,7 @@
 									<label class="label bg-primary group-admin">Admin</label> 
 									<label class="label bg-primary group-architect-leader">Architect-Leader</label> 
 									<label class="label bg-primary group-staff-leader">Staff-Leader</label> 
+									<label class="label bg-primary group-architect">Architect</label> 
 									<label class="label bg-primary group-staffplus">Staff+</label> 
 									<label class="label bg-primary group-staff">Staff</label> 
 									<label class="label bg-primary group-vip">VIP</label> 

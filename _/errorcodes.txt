@@ -1,6 +1,6 @@
 Error #1 => Onlineplayers -> Kein Datenbank ergebnis.
 
-Error #2 =>
+Error #2 => Template -> Template.php else
 
 Error #3 =>
 

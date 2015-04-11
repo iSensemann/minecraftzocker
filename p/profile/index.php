@@ -9,7 +9,7 @@
 		<title>MZ - Server</title>
 	</head>
 	<body class="bg"><noscript><div class="animated fadeoindown nojs">Pleas enable Javascript!</div></noscript>
-		<div id="wrapper" class="background active">
+		<div id="wrapper" class="background">
 			<div id="sidebar-wrapper" class="animated fadeinleft">
 				<ul id="sidebar_menu" class="sidebar-nav">
 					<li class="sidebar-brand"><a id="menu-toggle" href="#">Menu<span id="main_icon" class="fa fa-bars "></span></a></li>
@@ -50,24 +50,33 @@
 							</p>
 						</div>							
 						<div class="col-md-12 background">										
-						<?php 
-						
-						if($loggedin == 1){?>
-						<div class="profile-content">
-						<p>The last time you logged in Minecraft:&nbsp;<b><?php include('../../php/lastloginmc.php');?></b></p>
-						<form action="&?theme">
-						<p>Theme:&nbsp;<b>
-							<input type="radio" name="themebright" id="bright" value="Bright">
-							<label for="bright">Bright</label>
-							<input type="radio" name="themedark" id="dark" value="Dark">
-							<label for="dark">Dark</label>
-						</form>
-						</b></p>
-						<p>E-Mail address:&nbsp;<b><?php include('../../php/email.php');?></b></p>
-						<?php }else{ ?>
-						
-						<?php } ?>
-						</div>
+							<?php 
+							
+							if($loggedin == 1){?>
+							<div class="profile-content">
+								<div class="profile-header media">
+								  <div class="media-left">
+									<a href="../../p/profile?user=<?php echo $_SESSION['username']; ?>">
+									  <img class="circular-profile" src="https://minotar.net/avatar/<?php echo $_SESSION['username'];?>/100.png"></img>
+									</a>
+								  </div>
+								  <div class="media-body">
+									<h2 class="media-heading profile-name">&nbsp;<?php echo $_SESSION['username']; ?></h2>
+								  </div>
+								</div>
+								<div class="profile-content">
+									<div class="list-group">
+										  <a href="#" class="list-group-item disabled"><p>The last time you logged in Minecraft:&nbsp;<b><?php include('../../php/lastloginmc.php');?></b></p>	</a>
+										 <br> <a href="#" class="list-group-item disabled">Settings</a>
+										  <a href="#" class="list-group-item">Name:&nbsp;<b><?php echo $_SESSION['username'];?></b><a></a>
+										  <a href="#" class="list-group-item">E-Mail:&nbsp;<b><?php include('../../php/email.php');?></b><a>
+										  <a href="?test" class="list-group-item">Design:&nbsp;<b><?php include('../../php/template.php');?></b><a></a>
+									</div>
+									<?php }else{ ?>
+									
+									<?php } ?>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -77,11 +86,6 @@
 		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script type="text/javascript">
-		setTimeout('$("#wrapper").toggleClass("active")', 4000);
-		$("#login").toggleClass("login");
-		$("#login").toggleClass("hide-login");
-		setTimeout('$("#login").toggleClass("login")', 4000);
-		setTimeout('$("#login").toggleClass("hide-login")', 4000);
 		$("#menu-toggle").click(function(e) {
 		e.preventDefault();
 		$("#wrapper").toggleClass("active");

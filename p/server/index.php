@@ -9,7 +9,7 @@
 		<title>MZ - Server</title>
 	</head>
 	<body class="bg"><noscript><div class="animated fadeoindown nojs">Pleas enable Javascript!</div></noscript>
-		<div id="wrapper" class="background active">
+		<div id="wrapper" class="background">
 			<div id="sidebar-wrapper" class="animated fadeinleft">
 				<ul id="sidebar_menu" class="sidebar-nav">
 					<li class="sidebar-brand"><a id="menu-toggle" href="#">Menu<span id="main_icon" class="fa fa-bars "></span></a></li>
@@ -170,11 +170,6 @@
 		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script src="../js/bootstrap.js"></script>
 		<script type="text/javascript">
-		setTimeout('$("#wrapper").toggleClass("active")', 4000);
-		$("#login").toggleClass("login");
-		$("#login").toggleClass("hide-login");
-		setTimeout('$("#login").toggleClass("login")', 4000);
-		setTimeout('$("#login").toggleClass("hide-login")', 4000);
 		$("#menu-toggle").click(function(e) {
 		e.preventDefault();
 		$("#wrapper").toggleClass("active");

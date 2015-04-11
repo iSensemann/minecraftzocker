@@ -397,6 +397,7 @@ color: #2ecc71;
 }
 
 /*<<--- HOME #1--->>*/
+.articletitle{margin-top:-30px;}
 .box-option-home :last-child {margin-right: 0;}
 .boxing:hover .box-option-home  {opacity: 0.9;}
 .boxing:hover .box-option-home :hover {opacity: 1;}
@@ -718,7 +719,22 @@ only screen and (min-device-pixel-ratio: 2){
 .profile-content{
 margin-top: 20px;
 }
+.circular-profile {
+margin-right: auto;
+height: 100px;
+width: 100px;
+border-radius: 50%;
+background: url(../img/avatar.png) no-repeat;
+}
+.profile-name{
+margin-top: 35px;
+}
+.profile-header{
 
+}
+.profile-content{
+font-size: 15.5px;
+}
 /*<<--- MEMBERS #9--->>*/
 .members-content{
 margin-top: 20px;
@@ -759,7 +775,6 @@ font-size:12;
 }
 .img-member{
 margin-left:20px;
-margin-top: 40px;
 display: block;
 width: 80px;
 height: 80px;
